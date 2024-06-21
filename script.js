@@ -2,6 +2,7 @@ $(document).ready(function () {
     let currentLang = 'pt';
     const translations = {
       pt: {
+        button: `Switch Language 🇺🇸`,
         greet: `Olá!`,
         im: `eu sou o Bruno Pelegrino`,
         dev: `Desenvolvedor web fullstack`,
@@ -28,6 +29,7 @@ $(document).ready(function () {
         techs: `Habilidades`,
       },
       en: {
+        button: `Trocar idioma 🇧🇷`,
         greet: `Hello!`,
         im: `I'm Bruno Pelegrino`,
         dev: `Fullstack Web Developer`,
@@ -54,6 +56,7 @@ $(document).ready(function () {
     };
     const toggleLanguage = () => {
       currentLang = currentLang === 'en' ? 'pt' : 'en';
+      $('#toggle-language').html(translations[currentLang].button)
       $('#greet').html(translations[currentLang].greet);
       $('#im').html(translations[currentLang].im);
       $('#role').html(translations[currentLang].dev);
