@@ -45,6 +45,18 @@ hr {
   opacity: 1;
 }
 
+#toggle-language {
+    position: fixed;
+    top: 20px; /* Posição em relação ao topo da janela */
+    right: 20px; /* Posição em relação à direita da janela */
+    z-index: 1000; /* Z-index para garantir que fique acima de outros elementos, se necessário */
+    background-color: #252521;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+
 /* 02. Intro
    * =================================================================== */
 
@@ -191,7 +203,8 @@ section {
 }
 
 .section-primary {
-  border: 1px solid #1abc9c;
+
+  background-color: #ccc;
 }
 
 .section-colour {
@@ -244,7 +257,7 @@ section {
 
 footer {
   display: block;
-  background-color: white;
+  background-color: #ccc;
   color: black;
   padding: 50px 0;
 }
