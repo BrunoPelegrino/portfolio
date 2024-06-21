@@ -4,7 +4,6 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>ClearCareer</title>
     <!-- Bootstrap core CSS -->
     <link
       rel="stylesheet"
@@ -28,14 +27,17 @@
 
   <body>
     <!-- INTRO SECTION -->
+    <button id="toggle-language">Switch Language 🇺🇸</button>
     <section class="section-image">
       <div class="img-overlay"></div>
       <div class="intro">
         <div class="row">
           <div class="col-md-12">
-            <h2>Olá</h2>
-            <h1>Sou o Bruno Pelegrino</h1>
-            <p class="intro-desc"><span>Fullstack Web Developer</span></p>
+            <h2 id="greet">Olá!</h2>
+            <h1 id="im">
+              Sou o Bruno Pelegrino
+            </h1>
+            <p class="intro-desc"><span id="role">Desenvolvedor web fullstack</span></p>
           </div>
         </div>
         <div class="row">
@@ -59,13 +61,13 @@
           <i class="fa-solid fa-square-envelope fa-2x" aria-hidden="true"></i>:
           pelegrinobruno13@gmail.com
         </div>
-        <div class="CV"> 
-          <h3>
+        <div class="CV">
+          <h3 id="resume">
             Clique para ver meu currículo:
+        </h3>
             <a href="CV-BRUNOPELEGRINO-2024.pdf" download
               ><i class="fa-solid fa-file-pdf fa-2x" aria-hidden="true"></i
             ></a>
-          </h3>
         </div>
       </div>
       <!-- /intro -->
@@ -81,7 +83,7 @@
               src="perf.jpg"
               alt="Foto de perfil de Bruno Pelegrino"
             />
-            <h2>Sobre mim</h2>
+            <h2 id="description">Sobre mim</h2>
             <hr />
             <p class="lead">
               Sou um desenvolvedor fullstack apaixonado por tecnologia, com
@@ -119,8 +121,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-12 section-heading">
-            <h2>Skills</h2>
-            <p class="lead">Here are a few cool things about me</p>
+            <h2 id="techs">habilidades</h2>
             <hr />
             <div class="skills">
               <i class="fa-brands fa-js fa-5x" aria-hidden="true"></i>
@@ -146,24 +147,21 @@
         <div class="row">
           <div class="col-md-4">
             <p>
+              Created By:
+              <a href="https://github.com/BrunoPelegrino">Bruno Pelegrino</a>
+              <br>
               References:
               <a href="http://www.izzydoesizzy.com" target="_blank"
                 >Iskender Piyale-Sheard</a
               ><br />
-              <a
-                href="http://creativecommons.org/licenses/by/4.0/"
-                target="_blank"
-                ><i class="fa fa-creative-commons"></i> Attribution 4.0
-                License</a
-              >
             </p>
           </div>
           <div class="col-md-4 text-center">
             <div class="footer-icons">
-              <a href="https://ca.linkedin.com/in/ipiyale" target="_blank"
+              <a href="https://www.linkedin.com/in/bruno-pelegrino/" target="_blank"
                 ><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i
               ></a>
-              <a href="http://www.github.com/izzydoesizzy" target="_blank"
+              <a href="https://github.com/BrunoPelegrino" target="_blank"
                 ><i class="fa fa-github fa-2x" aria-hidden="true"></i
               ></a>
             </div>
@@ -173,5 +171,7 @@
       </div>
       <!-- /container -->
     </footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="./script.js"></script>
   </body>
 </html>
